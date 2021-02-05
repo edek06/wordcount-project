@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<h1>Your Text:</h1>
+
+{{ fulltext }}
+
+<h2>There are {{ words }} words in your text!</h2>
+
+<h1>Counter:</h1>
+
+{% for word, counttotal in dictionaries %}
+
+{{ word }} - {{ counttotal }}
+<br />
+
+{% endfor %}
